@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <section>
+        <figure>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <figcaption>My Profile Picture</figcaption>
+        </figure>
+        <article>
+            <h2>Igboanusi Vivian Doris</h2>
+            <p>Hello! I'm Vivian, a passionate web developer with a love for creating accessible and user-friendly websites. I enjoy learning new technologies and improving my coding skills. Welcome to my page!</p>
+        </article>
+    </section>
+    <footer>
+        <p>Contact me at: vivian.doe@example.com</p>
+    </footer>
+</body>
+</html>
