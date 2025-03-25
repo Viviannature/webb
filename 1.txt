@@ -3,37 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+            width: 100%;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Profile</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My Website</h1>
     </header>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my profile! Here you can learn more about me.</p>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Discover Our Amazing Product</h1>
+        <p>The best solution to enhance your business productivity and efficiency.</p>
+        <button>Learn More</button>
     </section>
     
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <p>Some of my favorite hobbies include reading, hiking, and coding.</p>
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the home section of the website.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about us in this section.</p>
     </section>
     
     <section id="contact">
         <h2>Contact</h2>
-        <p>Feel free to reach out to me via email or social media.</p>
+        <p>Get in touch with us through the details below.</p>
     </section>
     
     <footer>
-        <p>&copy; 2025 My Profile. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p>Follow us on Twitter: <a href="https://twitter.com/example" target="_blank">@example</a></p>
     </footer>
 </body>
 </html>

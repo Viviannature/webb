@@ -3,24 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+            width: 100%;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #0056b3;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .feature {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .feature img {
+            width: 50px;
+            height: 50px;
+        }
+        .feature h3 {
+            margin: 10px 0;
+        }
+        .feature p {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <h1>Welcome to My Website</h1>
     </header>
-    <section>
-        <figure>
-            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
-            <figcaption>My Profile Picture</figcaption>
-        </figure>
-        <article>
-            <h2>Igboanusi Vivian Doris</h2>
-            <p>Hello! I'm Vivian, a passionate web developer with a love for creating accessible and user-friendly websites. I enjoy learning new technologies and improving my coding skills. Welcome to my page!</p>
-        </article>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Discover Our Amazing Product</h1>
+        <p>The best solution to enhance your business productivity and efficiency.</p>
+        <button>Learn More</button>
     </section>
+    
+    <section class="features">
+        <div class="feature">
+            <img src="icon1.png" alt="Feature 1">
+            <h3>Feature One</h3>
+            <p>Short description explaining the feature.</p>
+        </div>
+        <div class="feature">
+            <img src="icon2.png" alt="Feature 2">
+            <h3>Feature Two</h3>
+            <p>Short description explaining the feature.</p>
+        </div>
+        <div class="feature">
+            <img src="icon3.png" alt="Feature 3">
+            <h3>Feature Three</h3>
+            <p>Short description explaining the feature.</p>
+        </div>
+    </section>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the home section of the website.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About</h2>
+        <p>Learn more about us in this section.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with us through the details below.</p>
+    </section>
+    
     <footer>
-        <p>Contact me at: vivian.doe@example.com</p>
+        <p>Contact us at: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p>Follow us on Twitter: <a href="https://twitter.com/example" target="_blank">@example</a></p>
     </footer>
 </body>
 </html>
